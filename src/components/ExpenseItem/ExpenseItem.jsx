@@ -2,9 +2,15 @@ import React from "react";
 import "./ExpenseItem.css";
 
 function ExpenseItem() {
+  const date = new Date();
+  const month = date.toLocaleString("en-US", { month: "long" });
+  const day = date.toLocaleString("en-US", { day: "2-digit" });
+  const year = date.getFullYear();
   return (
     <div className="expense-item">
-      <h3>March 28th 2022</h3>
+      <div>{month}</div>
+      <div>{year}</div>
+      <div>{day}</div>
       <div className="expense-item__description">
         <h2>Car insurance</h2>
         <h3 className="expense-item__price">$294.25</h3>
