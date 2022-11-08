@@ -8,9 +8,11 @@ function ExpenseItem() {
   const year = date.getFullYear();
   return (
     <div className="expense-item">
-      <div>{month}</div>
-      <div>{year}</div>
-      <div>{day}</div>
+      <div className="expense-date">
+        <div className="expense-date__month">{month}</div>
+        <div className="expense-year">{year}</div>
+        <div className="expense-day">{day}</div>
+      </div>
       <div className="expense-item__description">
         <h2>Car insurance</h2>
         <h3 className="expense-item__price">$294.25</h3>
