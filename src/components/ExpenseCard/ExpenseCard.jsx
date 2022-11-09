@@ -1,4 +1,5 @@
 import React from "react";
+import "../ExpenseItem/ExpenseItem.css";
 
 function ExpenseCard() {
   return (
