@@ -5,6 +5,16 @@ function ExpenseForm() {
   const [title, setTitle] = useState("");
   const [amount, setAmount] = useState("");
   const [date, setDate] = useState("");
+
+  const handleTitle = (e) => {
+    setTitle(e.target.value);
+  }
+  const handleAmount = (e) => {
+    setAmount(e.target.value);
+  }
+  const handleDate = (e) => {
+    setDate(e.target.value);
+  }
   return (
     <div>
       <form className="new-expense__controls">
