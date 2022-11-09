@@ -1,4 +1,5 @@
 import React from "react";
+import ExpenseCard from "../ExpenseCard/ExpenseCard";
 import "./ExpenseItem.css";
 
 function ExpenseItem() {
@@ -8,7 +9,7 @@ function ExpenseItem() {
   const year = date.getFullYear();
   return (
     <div className="expenses">
-
+    <ExpenseCard />
     </div>
   );
 }
