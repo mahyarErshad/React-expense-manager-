@@ -3,11 +3,14 @@ import ExpenseCard from "../ExpenseCard/ExpenseCard";
 import ExpenseFilter from "../ExpenseMonitor/ExpenseFilter/ExpenseFilter";
 import "./ExpenseItem.css";
 
-function ExpenseItem(props) {
+function ExpenseItem({ expenses }) {
   return (
     <div className="expenses">
       <ExpenseFilter />
-      <ExpenseCard expenses={props.expenses} />
+      {expenses.length &&
+        expenses.map((expenses) => {
+          return <ExpenseCard expenses={expenses} />;
+        })}
     </div>
   );
 }
