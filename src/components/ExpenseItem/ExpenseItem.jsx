@@ -7,7 +7,7 @@ function ExpenseItem(props) {
   return (
     <div className="expenses">
       <ExpenseFilter />
-      <ExpenseCard expenses={expenses} />
+      <ExpenseCard expenses={props.expenses} />
     </div>
   );
 }
