@@ -23,6 +23,9 @@ function ExpenseForm() {
       date: new Date(date),
     };
     console.log(newExpense);
+    setTitle("")
+    setAmount("")
+    setDate("")
   };
   return (
     <div>
