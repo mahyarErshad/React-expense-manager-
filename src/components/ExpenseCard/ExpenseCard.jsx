@@ -14,7 +14,7 @@ function ExpenseCard({expenses}) {
       </div>
       <div className="expense-item__description">
         <h2>{expenses.title}</h2>
-        <h3 className="expense-item__price">{expenses.amount}</h3>
+        <h3 className="expense-item__price">${expenses.amount}</h3>
       </div>
     </div>
   );
