@@ -23,7 +23,7 @@ function ExpenseForm(props) {
       date: new Date(date),
     };
     props.setExpenses((prev) => {
-      return [...props.expenses, newExpense];
+      return prev.concat(newExpense);
     });
     setTitle("");
     setAmount("");
