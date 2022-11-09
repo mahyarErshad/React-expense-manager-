@@ -2,10 +2,10 @@ import React from "react";
 import "./ExpenseSection.css";
 import ExpenseForm from "../ExpenseForm/ExpenseForm";
 
-function ExpenseSection() {
+function ExpenseSection(props) {
   return (
     <div className="new-expense">
-      <ExpenseForm />
+      <ExpenseForm setExpenses={props.setExpenses} />
     </div>
   );
 }
