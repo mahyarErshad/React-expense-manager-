@@ -5,7 +5,7 @@ import ExpenseForm from "../ExpenseForm/ExpenseForm";
 function ExpenseSection(props) {
   return (
     <div className="new-expense">
-      <ExpenseForm setExpenses={props.setExpenses} />
+      <ExpenseForm expenses={props.expenses} setExpenses={props.setExpenses} />
     </div>
   );
 }
