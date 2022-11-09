@@ -9,6 +9,10 @@ function ExpenseForm() {
           <label>Title</label>
           <input type="text" />
         </div>
+        <div className="new-expense__control">
+          <label>Amount</label>
+          <input type="number" min="0.1" step="0.1" />
+        </div>
       </form>
     </div>
   );
