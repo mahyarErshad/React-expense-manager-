@@ -1,7 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
 import "./ExpenseForm.css";
 
 function ExpenseForm() {
+  const [title, setTitle] = useState("");
+  const [amount, setAmount] = useState("");
+  const [date, setDate] = useState("");
   return (
     <div>
       <form className="new-expense__controls">
