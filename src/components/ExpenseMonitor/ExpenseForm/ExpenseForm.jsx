@@ -17,7 +17,7 @@ function ExpenseForm() {
   }
   return (
     <div>
-      <form className="new-expense__controls">
+      <form onSubmit={handleSubmit} className="new-expense__controls">
         <div className="new-expense__control">
           <label>Title</label>
           <input onChange={handleTitle} type="text" />
