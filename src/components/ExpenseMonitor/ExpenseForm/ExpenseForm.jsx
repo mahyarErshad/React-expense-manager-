@@ -8,13 +8,22 @@ function ExpenseForm() {
 
   const handleTitle = (e) => {
     setTitle(e.target.value);
-  }
+  };
   const handleAmount = (e) => {
     setAmount(e.target.value);
-  }
+  };
   const handleDate = (e) => {
     setDate(e.target.value);
-  }
+  };
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    const newExpense = {
+      title,
+      amount,
+      date: new Date(date),
+    };
+    console.log(newExpense);
+  };
   return (
     <div>
       <form onSubmit={handleSubmit} className="new-expense__controls">
