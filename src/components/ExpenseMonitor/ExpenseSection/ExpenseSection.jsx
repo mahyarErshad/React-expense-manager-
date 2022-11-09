@@ -1,13 +1,13 @@
-import React from 'react'
-import ExpenseForm from '../ExpenseForm/ExpenseForm'
-import "./ExpenseSection.css"
+import React from "react";
+import "./ExpenseSection.css";
+import ExpenseForm from "../ExpenseForm/ExpenseForm";
 
 function ExpenseSection() {
   return (
-    <div className='new-expense'>
+    <div className="new-expense">
       <ExpenseForm />
     </div>
-  )
+  );
 }
 
-export default ExpenseSection
+export default ExpenseSection;
