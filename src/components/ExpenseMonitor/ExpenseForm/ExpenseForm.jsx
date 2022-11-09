@@ -17,6 +17,9 @@ function ExpenseForm() {
           <label>Date</label>
           <input type="date" min="2019-01-01" step="2022-12-31" />
         </div>
+        <div className="new-expense__actions">
+          <button type="submit">Add expense</button>
+        </div>
       </form>
     </div>
   );
