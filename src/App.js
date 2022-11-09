@@ -6,7 +6,7 @@ function App() {
   const [expenses , setExpenses] = useState()
   return (
     <div>
-      <ExpenseSection expenses={expenses} setExpenses={setExpenses} />
+      <ExpenseSection setExpenses={setExpenses} />
       <ExpenseItem />
     </div>
   );
