@@ -3,10 +3,10 @@ import ExpenseItem from "./components/ExpenseItem/ExpenseItem";
 import { useState } from "react";
 
 function App() {
-  const [expenses , setExpense] = useState()
+  const [expenses , setExpenses] = useState()
   return (
     <div>
-      <ExpenseSection />
+      <ExpenseSection expenses={expenses} setExpenses={setExpenses} />
       <ExpenseItem />
     </div>
   );
