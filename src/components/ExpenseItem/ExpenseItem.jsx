@@ -8,8 +8,8 @@ function ExpenseItem({ expenses }) {
     <div className="expenses">
       <ExpenseFilter />
       {expenses.length &&
-        expenses.map((expenses) => {
-          return <ExpenseCard expenses={expenses} />;
+        expenses.map((expense) => {
+          return <ExpenseCard key={expense.id} expenses={expenses} />;
         })}
     </div>
   );
