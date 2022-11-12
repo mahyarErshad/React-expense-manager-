@@ -8,7 +8,7 @@ function ExpenseItem({ expenses }) {
 
   return (
     <div className="expenses">
-      <ExpenseFilter value={filteredYear} />
+      <ExpenseFilter value={filteredYear} setFilteredYear={setFilteredYear} />
       {expenses.length &&
         expenses.map((expense) => {
           return <ExpenseCard key={expense.id} expenses={expense} />;
