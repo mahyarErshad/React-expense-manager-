@@ -3,7 +3,7 @@ import "./ExpenseSection.css";
 import ExpenseForm from "../ExpenseForm/ExpenseForm";
 
 function ExpenseSection(props) {
-  const [addANewExpense, setAddAnewExpense] = useState();
+  const [addANewExpense, setAddAnewExpense] = useState(false);
   return <div className="new-expense">{addANewExpense ? <ExpenseForm setExpenses={props.setExpenses} /> : <button>Add a new expense</button>}</div>;
 }
 
