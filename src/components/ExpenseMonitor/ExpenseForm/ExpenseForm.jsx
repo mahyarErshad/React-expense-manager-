@@ -20,7 +20,7 @@ function ExpenseForm(props) {
     const newExpense = {
       id: Date.now(),
       title,
-      amount,
+      amount: +amount,
       date: new Date(date),
     };
     props.setExpenses((prev) => {
