@@ -36,11 +36,11 @@ function ExpenseForm(props) {
       <form onSubmit={handleSubmit} className="new-expense__controls">
         <div className="new-expense__control">
           <label>Title</label>
-          <input onChange={handleTitle} value={title} type="text" />
+          <input onChange={handleTitle} placeholder="Enter the title..." value={title} type="text" />
         </div>
         <div className="new-expense__control">
           <label>Amount</label>
-          <input onChange={handleAmount} value={amount} type="number" min="1" step="1" />
+          <input onChange={handleAmount} placeholder="How much does it cost?" value={amount} type="number" min="1" step="1" />
         </div>
         <div className="new-expense__control">
           <label>Date</label>
