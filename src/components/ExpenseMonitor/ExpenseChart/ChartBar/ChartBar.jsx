@@ -3,8 +3,8 @@ import "./ChartBar.css";
 
 function ChartBar(props) {
   let barFieldHeight = "0%";
-  if (props.max > 0) {
-    barFieldHeight = Math.round((props.value / props.max) * 100) + "%";
+  if (props.maxValue > 0) {
+    barFieldHeight = Math.round((props.value / props.maxValue) * 100) + "%";
   }
   return (
     <div className="chart-bar">
