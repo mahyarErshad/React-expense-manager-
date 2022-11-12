@@ -1,7 +1,7 @@
 import React from "react";
 import Chart from "../Chart/Chart";
 
-function ChartWrapper() {
+function ChartWrapper(props) {
   const dataPoints = [
     {
       label: "January",
@@ -52,6 +52,10 @@ function ChartWrapper() {
       value: 0,
     },
   ];
+  for (const expense in props.expenses) {
+    const expenseMonth = expense.date.getMonth();
+    dataPoints[expenseMonth].value += expense.amount;
+  }
   return (
     <>
       <Chart dataPoints={dataPoints} />
