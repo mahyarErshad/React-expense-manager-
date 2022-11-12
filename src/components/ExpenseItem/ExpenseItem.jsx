@@ -4,15 +4,16 @@ import ExpenseFilter from "../ExpenseMonitor/ExpenseFilter/ExpenseFilter";
 import "./ExpenseItem.css";
 
 function ExpenseItem({ expenses }) {
-  const [selectedYear, setSelectedYear] = useState("2020")
-  const filteredExpenses = () => {
-    selectedYear.filter
-  }
+  const [selectedYear, setSelectedYear] = useState("2020");
+  const filteredByYear = expenses.filter((expenses) =>{
+    return expenses.date.getFullYear().toString() === selectedYear.toString()
+  })
+
   return (
     <div className="expenses">
       <ExpenseFilter value={selectedYear} setSelectedYear={setSelectedYear} />
-      {expenses.length &&
-        expenses.map((expense) => {
+      {filteredByYear.length &&
+        filteredByYear.map((expense) => {
           return <ExpenseCard key={expense.id} expenses={expense} />;
         })}
     </div>
