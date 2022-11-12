@@ -15,7 +15,7 @@ function ExpenseItem({ expenses }) {
       {filteredByYear.length ?
         filteredByYear.map((expense) => {
           return <ExpenseCard key={expense.id} expenses={expense} />;
-        }) : <p>No expenses found!</p> }
+        }) : <p className="expenses-list__fallback">No expenses found!</p> }
     </div>
   );
 }
