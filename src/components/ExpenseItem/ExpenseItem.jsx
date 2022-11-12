@@ -12,10 +12,10 @@ function ExpenseItem({ expenses }) {
   return (
     <div className="expenses">
       <ExpenseFilter value={selectedYear} setSelectedYear={setSelectedYear} />
-      {filteredByYear.length &&
+      {filteredByYear.length ?
         filteredByYear.map((expense) => {
           return <ExpenseCard key={expense.id} expenses={expense} />;
-        })}
+        }) : <p>No expenses found!</p> }
     </div>
   );
 }
