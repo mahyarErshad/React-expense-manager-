@@ -18,6 +18,7 @@ function ExpenseForm(props) {
   const handleSubmit = (e) => {
     e.preventDefault();
     const newExpense = {
+      id: Date.now(),
       title,
       amount,
       date: new Date(date),
