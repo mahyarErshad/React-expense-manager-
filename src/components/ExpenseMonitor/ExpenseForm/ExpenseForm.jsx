@@ -3,7 +3,7 @@ import "./ExpenseForm.css";
 
 function ExpenseForm(props) {
   const [title, setTitle] = useState("");
-  const [amount, setAmount] = useState("");
+  const [amount, setAmount] = useState("1");
   const [date, setDate] = useState("");
 
   const handleTitle = (e) => {
