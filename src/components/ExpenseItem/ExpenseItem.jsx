@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import ExpenseCard from "../ExpenseCard/ExpenseCard";
 import ExpenseFilter from "../ExpenseMonitor/ExpenseFilter/ExpenseFilter";
+import ChartWrapper from "../ExpenseMonitor/ExpenseChart/ChartWrapper/ChartWrapper"
 import "./ExpenseItem.css";
 
 function ExpenseItem({ expenses }) {
@@ -11,6 +12,7 @@ function ExpenseItem({ expenses }) {
 
   return (
     <div className="expenses">
+    <ChartWrapper expenses={filteredByYear} />
       <ExpenseFilter value={selectedYear} setSelectedYear={setSelectedYear} />
       {filteredByYear.length ?
         filteredByYear.map((expense) => {
