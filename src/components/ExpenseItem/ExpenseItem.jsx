@@ -9,7 +9,7 @@ function ExpenseItem({ expenses }) {
       <ExpenseFilter />
       {expenses.length &&
         expenses.map((expense) => {
-          return <ExpenseCard key={expense.id} expenses={expenses} />;
+          return <ExpenseCard key={expense.id} expenses={expense} />;
         })}
     </div>
   );
