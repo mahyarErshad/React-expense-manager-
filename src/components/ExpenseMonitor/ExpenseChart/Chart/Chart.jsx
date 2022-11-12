@@ -1,9 +1,14 @@
 import React from 'react'
 import "./Chart.css"
+import ChartBar from "../ChartBar/ChartBar"
 
-function Chart() {
+function Chart(props) {
   return (
-    <div>Chart</div>
+    <div className='chart'>
+        {props.dataPoints.map((dataPoint)=>{
+            <ChartBar />
+        })}
+    </div>
   )
 }
 
