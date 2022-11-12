@@ -4,7 +4,7 @@ import ExpenseFilter from "../ExpenseMonitor/ExpenseFilter/ExpenseFilter";
 import "./ExpenseItem.css";
 
 function ExpenseItem({ expenses }) {
-  const [selectedYear, setSelectedYear] = useState("2020");
+  const [selectedYear, setSelectedYear] = useState("2023");
   const filteredByYear = expenses.filter((expenses) =>{
     return expenses.date.getFullYear().toString() === selectedYear.toString()
   })
