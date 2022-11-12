@@ -4,7 +4,7 @@ import ExpenseForm from "../ExpenseForm/ExpenseForm";
 
 function ExpenseSection(props) {
   const [addANewExpense, setAddAnewExpense] = useState(false);
-  return <div className="new-expense">{addANewExpense ? <ExpenseForm setExpenses={props.setExpenses} /> : <button>Add a new expense</button>}</div>;
+  return <div className="new-expense">{addANewExpense ? <ExpenseForm setExpenses={props.setExpenses} /> : <button onClick={()=> setAddAnewExpense(true)}>Add a new expense</button>}</div>;
 }
 
 export default ExpenseSection;
